@@ -1,5 +1,8 @@
 #cs1300-gallery {
-  background-color: lightblue;
+  background-color: beige;
+  border: 2px solid #333;
+  background-size: cover;
+  margin: 10px;
 }
 
 /* Uncomment below if images are way too big.
@@ -9,6 +12,60 @@ Selects all image tags and makes them 500px;
 /*  width: 500px;*/
 /*}*/
 
-.gallery-container {
-  /* TODO add styles (hint: use flex!) https://www.w3schools.com/cssref/ */
+.row {
+  margin: auto;
+  display: flex;
+  padding: 2px;
+  text-align: center;
+}
+.row2 {
+  margin: auto;
+  display: flex;
+  padding: 2px;
+  text-align: center;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 2px;
+}
+
+img {
+  float: left;
+  border-radius: 50%;
+  border-style: dotted;
+  width: 120px;
+  height: 100px;
+  object-fit: cover;
+}
+
+body {
+  background-color: #89cff0;
+}
+
+img:hover {
+  color: rgb(0, 204, 255);
+}
+img:active {
+  color: black;
+}
+
+.button {
+  display: flex;
+  text-align: center;
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 1;
 }
